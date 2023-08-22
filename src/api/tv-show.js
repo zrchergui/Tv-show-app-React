@@ -18,7 +18,6 @@ export class TVShowAPI {
     const response = await axios.get(
       `${BASE_URL}search/tv${API_KEY_PARAM}&query=${title}`
     );
-    //console.log(response.data.results);
     return response.data.results;
   }
 }
